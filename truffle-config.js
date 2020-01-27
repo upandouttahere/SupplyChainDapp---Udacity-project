@@ -24,7 +24,6 @@ const infuraKey = "6a480df17fc474da0d0e782520b038d";
 const fs = require('fs');
 const mnemonic = "emotion member desert above uncover miracle happy bring seek cake elevator high";
 
-
 module.exports = {
   contracts_build_directory: "./client/src/contracts",
   networks: {
@@ -46,10 +45,10 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      // version: "0.5.0"
-      version: "0.4.24",
+      version: "0.5.1"
+      // version: "0.4.24",
       // version: "0.4.8" // Fetch exact version from solc-bin (default: truffle's version)
-      docker: true        // Use "0.5.1" you've installed locally with docker (default: false)
+      // docker: true        // Use "0.5.1" you've installed locally with docker (default: false)
     }
   }
 }
