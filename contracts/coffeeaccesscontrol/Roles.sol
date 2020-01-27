@@ -1,7 +1,9 @@
-pragma solidity ^0.4.24;
+// pragma solidity ^0.4.24;
 // pragma solidity ^0.4.24
 // pragma solidity >=0.4.24;
-// pragma solidity ^0.5;
+pragma solidity ^0.5.1;
+// pragma solidity ^ "0.4.24";
+// pragma solidity 0.4.24;
 
 /**
  * @title Roles
