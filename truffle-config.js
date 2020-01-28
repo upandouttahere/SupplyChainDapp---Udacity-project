@@ -24,13 +24,15 @@ const infuraKey = "6a480df17fc474da0d0e782520b038d";
 const fs = require('fs');
 const mnemonic = "emotion member desert above uncover miracle happy bring seek cake elevator high";
 
+
 module.exports = {
   contracts_build_directory: "./client/src/contracts",
   networks: {
     rinkeby: {
       provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
-      network_id: 4,       // Rinkeby's id
+      network_id: 4,
       gas: 5500000,        // Rinkeby has a lower block limit than mainnet
+      gasPrice: 21000000000,
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
@@ -45,10 +47,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.5.1"
-      // version: "0.4.24",
-      // version: "0.4.8" // Fetch exact version from solc-bin (default: truffle's version)
-      // docker: true        // Use "0.5.1" you've installed locally with docker (default: false)
+      version: "0.5.1" // Fetch exact version from solc-bin (default: truffle's version)
     }
   }
 }
