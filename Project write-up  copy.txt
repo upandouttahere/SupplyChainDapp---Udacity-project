@@ -1,0 +1,15 @@
+
+
+Ethereum Dapp for Tracking Items through Supply Chain
+Project write-up
+
+
+Rinkeby test network
+Contract address: 0xec91d28049567d688bd88897e4a0a20750ef8a2d
+Transaction ID: 0x136b5a66615df8eaf89981a376d6ed655ce118989396b37dc3d59dbe0347f2ea
+
+Version numbers
+Truffle: v4.1.14
+Node: v10.16.3
+Web3.js: v1.2.1
+
